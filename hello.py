@@ -26,7 +26,7 @@ def page_not_found(e):
 def internal_server_error(e):
  return render_template('500.html'), 500
 
- @app.route('/contextorequisicao/<name>')
+@app.route('/contextorequisicao/<name>')
 def contextorequisicao(name):
     navegador=request.headers.get('User-Agent')
     ip_agent=request.remote_addr
